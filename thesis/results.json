@@ -1,0 +1,1717 @@
+{
+ "dataset": {
+  "raw_rows": 2544,
+  "valid_records": 2544,
+  "excluded": 0,
+  "countries_raw": 92,
+  "countries": 91,
+  "quarters": 46,
+  "start": "2015 Q1",
+  "end": "2026 Q2",
+  "latest": "2026 Q2",
+  "latest_status": "Complete",
+  "latest_evidence": [
+   "Calendar quarter ended on 2026-06-30.",
+   "Monthly carrier file reports all three months of the quarter.",
+   "60 reporting countries vs median 57 in the previous four quarters.",
+   "Passengers to India are 92% of the same quarter last year."
+  ]
+ },
+ "quality": [
+  {
+   "Check": "Schema",
+   "Status": "Pass",
+   "Details": "Country-level records (Year, Quarter, Country + traffic columns)",
+   "Rows affected": 2544,
+   "Action": "Columns recognised"
+  },
+  {
+   "Check": "Two-digit years",
+   "Status": "Info",
+   "Details": "Years 0-99 interpreted as 2000-2099 (source uses 15 = 2015).",
+   "Rows affected": 2544,
+   "Action": "Converted to four digits"
+  },
+  {
+   "Check": "Year values",
+   "Status": "Pass",
+   "Details": "0 invalid year value(s).",
+   "Rows affected": 0,
+   "Action": "None"
+  },
+  {
+   "Check": "Quarter values",
+   "Status": "Pass",
+   "Details": "0 value(s) outside 1-4.",
+   "Rows affected": 0,
+   "Action": "None"
+  },
+  {
+   "Check": "Numeric values",
+   "Status": "Pass",
+   "Details": "All traffic values numeric.",
+   "Rows affected": 0,
+   "Action": "None"
+  },
+  {
+   "Check": "Missing values",
+   "Status": "Pass",
+   "Details": "No missing traffic values.",
+   "Rows affected": 0,
+   "Action": "None"
+  },
+  {
+   "Check": "Negative values",
+   "Status": "Pass",
+   "Details": "0 record(s) with negative traffic.",
+   "Rows affected": 0,
+   "Action": "None"
+  },
+  {
+   "Check": "Country name variants",
+   "Status": "Info",
+   "Details": "'UNITED ARAB EMIRATES*' \u2192 'UNITED ARAB EMIRATES'",
+   "Rows affected": 11,
+   "Action": "Harmonised (variants never share a quarter)"
+  },
+  {
+   "Check": "Duplicate rows",
+   "Status": "Pass",
+   "Details": "0 exact duplicate record(s).",
+   "Rows affected": 0,
+   "Action": "None"
+  },
+  {
+   "Check": "Duplicate quarter-country keys",
+   "Status": "Pass",
+   "Details": "0 record(s) repeat a quarter-country with different values.",
+   "Rows affected": 0,
+   "Action": "None"
+  },
+  {
+   "Check": "Quarter coverage",
+   "Status": "Pass",
+   "Details": "46 consecutive quarters, no gaps.",
+   "Rows affected": 0,
+   "Action": "None"
+  },
+  {
+   "Check": "Latest quarter",
+   "Status": "Pass",
+   "Details": "2026 Q2: Calendar quarter ended on 2026-06-30. Monthly carrier file reports all three months of the quarter. 60 reporting countries vs median 57 in the previous four quarters. Passengers to India are 92% of the same quarter last year.",
+   "Rows affected": 0,
+   "Action": "None"
+  }
+ ],
+ "head": [
+  {
+   "Year": 15,
+   "Quarter": 1,
+   "Country": "AFGHANISTAN",
+   "PaxToIndia": 37194,
+   "PaxFromIndia": 32721,
+   "FreightToIndia": 96.72,
+   "FreightFromIndia": 676.42
+  },
+  {
+   "Year": 15,
+   "Quarter": 2,
+   "Country": "AFGHANISTAN",
+   "PaxToIndia": 26708,
+   "PaxFromIndia": 30315,
+   "FreightToIndia": 118.03,
+   "FreightFromIndia": 507.01
+  },
+  {
+   "Year": 15,
+   "Quarter": 3,
+   "Country": "AFGHANISTAN",
+   "PaxToIndia": 27081,
+   "PaxFromIndia": 20488,
+   "FreightToIndia": 103.26,
+   "FreightFromIndia": 520.7
+  },
+  {
+   "Year": 15,
+   "Quarter": 4,
+   "Country": "AFGHANISTAN",
+   "PaxToIndia": 24290,
+   "PaxFromIndia": 18712,
+   "FreightToIndia": 276.15,
+   "FreightFromIndia": 755.51
+  },
+  {
+   "Year": 16,
+   "Quarter": 1,
+   "Country": "AFGHANISTAN",
+   "PaxToIndia": 39719,
+   "PaxFromIndia": 38601,
+   "FreightToIndia": 200.33,
+   "FreightFromIndia": 1409.55
+  }
+ ],
+ "quarterly_head": [
+  {
+   "Date": "2015-01-01",
+   "PaxToIndia": 5712230.0,
+   "PaxFromIndia": 6376365.0,
+   "FreightToIndia": 126381.57,
+   "FreightFromIndia": 213762.57
+  },
+  {
+   "Date": "2015-04-01",
+   "PaxToIndia": 5876964.0,
+   "PaxFromIndia": 6276379.0,
+   "FreightToIndia": 138740.32,
+   "FreightFromIndia": 214713.97
+  },
+  {
+   "Date": "2015-07-01",
+   "PaxToIndia": 5711102.0,
+   "PaxFromIndia": 6064483.0,
+   "FreightToIndia": 150640.95,
+   "FreightFromIndia": 205418.27
+  },
+  {
+   "Date": "2015-10-01",
+   "PaxToIndia": 6481344.0,
+   "PaxFromIndia": 6141729.0,
+   "FreightToIndia": 144974.47,
+   "FreightFromIndia": 253880.63
+  }
+ ],
+ "quarterly_tail": [
+  {
+   "Date": "2025-07-01",
+   "PaxToIndia": 9033491.0,
+   "PaxFromIndia": 9862786.0,
+   "FreightToIndia": 211487.94,
+   "FreightFromIndia": 306815.02
+  },
+  {
+   "Date": "2025-10-01",
+   "PaxToIndia": 10752640.0,
+   "PaxFromIndia": 10077951.0,
+   "FreightToIndia": 231833.54,
+   "FreightFromIndia": 311065.48
+  },
+  {
+   "Date": "2026-01-01",
+   "PaxToIndia": 9332607.0,
+   "PaxFromIndia": 9767964.0,
+   "FreightToIndia": 243001.6,
+   "FreightFromIndia": 324925.18
+  },
+  {
+   "Date": "2026-04-01",
+   "PaxToIndia": 8556723.0,
+   "PaxFromIndia": 8643417.0,
+   "FreightToIndia": 202149.61,
+   "FreightFromIndia": 306016.27
+  }
+ ],
+ "records_per_quarter": {
+  "min": 49,
+  "max": 63
+ },
+ "growth": {
+  "qoq_min": -95.13161850364187,
+  "qoq_min_q": "2020 Q2",
+  "qoq_max": 220.9239887713002,
+  "qoq_max_q": "2020 Q3",
+  "yoy_min": -96.20334502430795,
+  "yoy_min_q": "2020 Q2",
+  "yoy_max": 360.7602730029335,
+  "yoy_max_q": "2022 Q2",
+  "yoy_latest": -8.339343726162182,
+  "small_base_quarters": [
+   "2020 Q3",
+   "2020 Q4",
+   "2021 Q1",
+   "2021 Q2",
+   "2021 Q3",
+   "2021 Q4",
+   "2022 Q2",
+   "2022 Q3"
+  ]
+ },
+ "annual": [
+  {
+   "Year": 2015,
+   "Quarters observed": 4,
+   "PaxToIndia": 23781640.0,
+   "PaxFromIndia": 24858956.0,
+   "FreightToIndia": 560737.31,
+   "FreightFromIndia": 887775.44,
+   "Complete year": true
+  },
+  {
+   "Year": 2016,
+   "Quarters observed": 4,
+   "PaxToIndia": 26550668.0,
+   "PaxFromIndia": 27122472.0,
+   "FreightToIndia": 570172.88,
+   "FreightFromIndia": 891173.6,
+   "Complete year": true
+  },
+  {
+   "Year": 2017,
+   "Quarters observed": 4,
+   "PaxToIndia": 29257716.0,
+   "PaxFromIndia": 29683857.0,
+   "FreightToIndia": 667222.26,
+   "FreightFromIndia": 1013108.37,
+   "Complete year": true
+  },
+  {
+   "Year": 2018,
+   "Quarters observed": 4,
+   "PaxToIndia": 31364559.0,
+   "PaxFromIndia": 31846282.0,
+   "FreightToIndia": 723559.8600000001,
+   "FreightFromIndia": 1074479.26,
+   "Complete year": true
+  },
+  {
+   "Year": 2019,
+   "Quarters observed": 4,
+   "PaxToIndia": 31662661.0,
+   "PaxFromIndia": 32515548.0,
+   "FreightToIndia": 630122.16,
+   "FreightFromIndia": 1016861.4600000001,
+   "Complete year": true
+  },
+  {
+   "Year": 2020,
+   "Quarters observed": 4,
+   "PaxToIndia": 8804684.0,
+   "PaxFromIndia": 8432178.0,
+   "FreightToIndia": 413532.57,
+   "FreightFromIndia": 594760.09,
+   "Complete year": true
+  },
+  {
+   "Year": 2021,
+   "Quarters observed": 4,
+   "PaxToIndia": 8399498.0,
+   "PaxFromIndia": 8639901.0,
+   "FreightToIndia": 605438.6,
+   "FreightFromIndia": 772187.13,
+   "Complete year": true
+  },
+  {
+   "Year": 2022,
+   "Quarters observed": 4,
+   "PaxToIndia": 22711384.0,
+   "PaxFromIndia": 24482455.0,
+   "FreightToIndia": 632030.51,
+   "FreightFromIndia": 861618.1,
+   "Complete year": true
+  },
+  {
+   "Year": 2023,
+   "Quarters observed": 4,
+   "PaxToIndia": 30994436.0,
+   "PaxFromIndia": 32887452.0,
+   "FreightToIndia": 613252.19,
+   "FreightFromIndia": 932838.4,
+   "Complete year": true
+  },
+  {
+   "Year": 2024,
+   "Quarters observed": 4,
+   "PaxToIndia": 35553171.0,
+   "PaxFromIndia": 36657232.0,
+   "FreightToIndia": 684587.11,
+   "FreightFromIndia": 1059136.69,
+   "Complete year": true
+  },
+  {
+   "Year": 2025,
+   "Quarters observed": 4,
+   "PaxToIndia": 38334313.0,
+   "PaxFromIndia": 39645623.0,
+   "FreightToIndia": 821461.88,
+   "FreightFromIndia": 1188353.5899999999,
+   "Complete year": true
+  },
+  {
+   "Year": 2026,
+   "Quarters observed": 2,
+   "PaxToIndia": 17889330.0,
+   "PaxFromIndia": 18411381.0,
+   "FreightToIndia": 445151.21,
+   "FreightFromIndia": 630941.45,
+   "Complete year": false
+  }
+ ],
+ "quarter_means": {
+  "Q1": 6682214.666666667,
+  "Q2": 6395879.0,
+  "Q3": 6154312.2727272725,
+  "Q4": 7333591.0
+ },
+ "quarter_means_pre": {
+  "Q1": 6862848.8,
+  "Q2": 7066961.6,
+  "Q3": 6863781.4,
+  "Q4": 7729857.0
+ },
+ "quarter_means_post": {
+  "Q1": 7546536.4,
+  "Q2": 7981312.4,
+  "Q3": 7705771.75,
+  "Q4": 9255075.75
+ },
+ "descriptive": [
+  {
+   "Variable": "PaxToIndia",
+   "Unit": "passengers",
+   "Count": 46,
+   "Mean": 6637044.782608695,
+   "Median": 7363806.0,
+   "Std. dev.": 2541266.572630611,
+   "Min": 294246.0,
+   "Q1": 5918728.25,
+   "Q3": 8440952.5,
+   "Max": 10752640.0,
+   "Skewness": -1.0973784807,
+   "Kurtosis": 0.546102599,
+   "CV (%)": 38.289128006
+  },
+  {
+   "Variable": "PaxFromIndia",
+   "Unit": "passengers",
+   "Count": 46,
+   "Mean": 6851811.673913044,
+   "Median": 7503107.0,
+   "Std. dev.": 2622263.7073812988,
+   "Min": 116849.0,
+   "Q1": 6301375.5,
+   "Q3": 8447485.25,
+   "Max": 10127507.0,
+   "Skewness": -1.2798727097,
+   "Kurtosis": 0.9226325675,
+   "CV (%)": 38.2711001437
+  },
+  {
+   "Variable": "FreightToIndia",
+   "Unit": "freight, source units",
+   "Count": 46,
+   "Mean": 160158.0117391305,
+   "Median": 156862.955,
+   "Std. dev.": 30679.5594696839,
+   "Min": 54118.64,
+   "Q1": 145664.135,
+   "Q3": 173394.0925,
+   "Max": 243001.6,
+   "Skewness": -0.229446356,
+   "Kurtosis": 3.2909646994,
+   "CV (%)": 19.1558069038
+  },
+  {
+   "Variable": "FreightFromIndia",
+   "Unit": "freight, source units",
+   "Count": 46,
+   "Mean": 237461.5995652174,
+   "Median": 236594.24,
+   "Std. dev.": 45332.9155570009,
+   "Min": 80025.29,
+   "Q1": 214000.42,
+   "Q3": 264644.0675,
+   "Max": 324925.18,
+   "Skewness": -0.8650992256,
+   "Kurtosis": 2.2698126257,
+   "CV (%)": 19.0906300808
+  }
+ ],
+ "corr_levels": {
+  "PaxToIndia": {
+   "PaxToIndia": 1.0,
+   "PaxFromIndia": 0.9809,
+   "FreightToIndia": 0.7036,
+   "FreightFromIndia": 0.8809
+  },
+  "PaxFromIndia": {
+   "PaxToIndia": 0.9809,
+   "PaxFromIndia": 1.0,
+   "FreightToIndia": 0.6896,
+   "FreightFromIndia": 0.8788
+  },
+  "FreightToIndia": {
+   "PaxToIndia": 0.7036,
+   "PaxFromIndia": 0.6896,
+   "FreightToIndia": 1.0,
+   "FreightFromIndia": 0.8959
+  },
+  "FreightFromIndia": {
+   "PaxToIndia": 0.8809,
+   "PaxFromIndia": 0.8788,
+   "FreightToIndia": 0.8959,
+   "FreightFromIndia": 1.0
+  }
+ },
+ "corr_changes": {
+  "PaxToIndia": {
+   "PaxToIndia": 1.0,
+   "PaxFromIndia": 0.9748,
+   "FreightToIndia": 0.8295,
+   "FreightFromIndia": 0.8916
+  },
+  "PaxFromIndia": {
+   "PaxToIndia": 0.9748,
+   "PaxFromIndia": 1.0,
+   "FreightToIndia": 0.8144,
+   "FreightFromIndia": 0.9021
+  },
+  "FreightToIndia": {
+   "PaxToIndia": 0.8295,
+   "PaxFromIndia": 0.8144,
+   "FreightToIndia": 1.0,
+   "FreightFromIndia": 0.8902
+  },
+  "FreightFromIndia": {
+   "PaxToIndia": 0.8916,
+   "PaxFromIndia": 0.9021,
+   "FreightToIndia": 0.8902,
+   "FreightFromIndia": 1.0
+  }
+ },
+ "corr_spearman": {
+  "PaxToIndia": {
+   "PaxToIndia": 1.0,
+   "PaxFromIndia": 0.9442,
+   "FreightToIndia": 0.7458,
+   "FreightFromIndia": 0.8964
+  },
+  "PaxFromIndia": {
+   "PaxToIndia": 0.9442,
+   "PaxFromIndia": 1.0,
+   "FreightToIndia": 0.7302,
+   "FreightFromIndia": 0.881
+  },
+  "FreightToIndia": {
+   "PaxToIndia": 0.7458,
+   "PaxFromIndia": 0.7302,
+   "FreightToIndia": 1.0,
+   "FreightFromIndia": 0.8378
+  },
+  "FreightFromIndia": {
+   "PaxToIndia": 0.8964,
+   "PaxFromIndia": 0.881,
+   "FreightToIndia": 0.8378,
+   "FreightFromIndia": 1.0
+  }
+ },
+ "top_countries": [
+  {
+   "Country": "UNITED ARAB EMIRATES",
+   "Total": 96886633.0,
+   "Share (%)": 31.7344725124
+  },
+  {
+   "Country": "SINGAPORE",
+   "Total": 21319241.0,
+   "Share (%)": 6.9829536496
+  },
+  {
+   "Country": "SAUDI ARABIA",
+   "Total": 19000176.0,
+   "Share (%)": 6.2233617201
+  },
+  {
+   "Country": "THAILAND",
+   "Total": 18508869.0,
+   "Share (%)": 6.0624378857
+  },
+  {
+   "Country": "QATAR",
+   "Total": 18024029.0,
+   "Share (%)": 5.9036322675
+  },
+  {
+   "Country": "UNITED KINGDOM",
+   "Total": 14286336.0,
+   "Share (%)": 4.6793796322
+  },
+  {
+   "Country": "OMAN",
+   "Total": 13955465.0,
+   "Share (%)": 4.5710053774
+  },
+  {
+   "Country": "MALAYSIA",
+   "Total": 13145296.0,
+   "Share (%)": 4.3056407439
+  },
+  {
+   "Country": "SRI LANKA",
+   "Total": 10277504.0,
+   "Share (%)": 3.3663175
+  },
+  {
+   "Country": "GERMANY",
+   "Total": 7190416.0,
+   "Share (%)": 2.3551655356
+  },
+  {
+   "Country": "KUWAIT",
+   "Total": 6915343.0,
+   "Share (%)": 2.2650674871
+  },
+  {
+   "Country": "UNITED STATES",
+   "Total": 6730570.0,
+   "Share (%)": 2.2045465101
+  },
+  {
+   "Country": "BAHRAIN",
+   "Total": 5929818.0,
+   "Share (%)": 1.9422663426
+  },
+  {
+   "Country": "HONG KONG",
+   "Total": 5627423.0,
+   "Share (%)": 1.8432191829
+  },
+  {
+   "Country": "NEPAL",
+   "Total": 4935702.0,
+   "Share (%)": 1.616651282
+  }
+ ],
+ "top5_share": 56.906858035232155,
+ "share_latest": {
+  "UNITED ARAB EMIRATES": 26.872939558753977,
+  "SINGAPORE": 7.897579482238702,
+  "SAUDI ARABIA": 6.553197994138644,
+  "THAILAND": 8.166923248538021,
+  "QATAR": 4.708589959029876
+ },
+ "share_first": {
+  "UNITED ARAB EMIRATES": 32.49268674405618,
+  "SINGAPORE": 6.8342136083456015,
+  "SAUDI ARABIA": 6.671842695409673,
+  "THAILAND": 5.240825386932949,
+  "QATAR": 5.026180668495491
+ },
+ "decomposition": {
+  "PaxToIndia": {
+   "seasonal_strength": 0.3885070559158905,
+   "trend_strength": 0.9524143514439045,
+   "indices": {
+    "Q1": 62750.76846590909,
+    "Q2": -314658.09403409093,
+    "Q3": -427889.47357954545,
+    "Q4": 679796.7991477273
+   }
+  },
+  "FreightToIndia": {
+   "seasonal_strength": 0.06260743322540052,
+   "trend_strength": 0.8585576584322282,
+   "indices": {
+    "Q1": -546.6206477272706,
+    "Q2": -2941.3193977272736,
+    "Q3": -787.8011136363598,
+    "Q4": 4275.741159090903
+   }
+  }
+ },
+ "adf": [
+  {
+   "Variable": "PaxToIndia",
+   "Transform": "Level",
+   "ADF statistic": -2.4542076351,
+   "p-value": 0.1270172332,
+   "Lags used": 4,
+   "Observations used": 41,
+   "Critical 1%": -3.6009833672,
+   "Critical 5%": -2.9351348158,
+   "Critical 10%": -2.6059629804,
+   "Stationary": false
+  },
+  {
+   "Variable": "PaxToIndia",
+   "Transform": "First difference",
+   "ADF statistic": -6.2842379861,
+   "p-value": 3.73e-08,
+   "Lags used": 0,
+   "Observations used": 44,
+   "Critical 1%": -3.5885733964,
+   "Critical 5%": -2.9298856612,
+   "Critical 10%": -2.6031845661,
+   "Stationary": true
+  },
+  {
+   "Variable": "PaxToIndia",
+   "Transform": "Seasonal difference",
+   "ADF statistic": -2.8277324852,
+   "p-value": 0.0544202714,
+   "Lags used": 2,
+   "Observations used": 39,
+   "Critical 1%": -3.6103996013,
+   "Critical 5%": -2.9391089459,
+   "Critical 10%": -2.6080629652,
+   "Stationary": false
+  },
+  {
+   "Variable": "PaxToIndia",
+   "Transform": "Log first difference",
+   "ADF statistic": -7.6114615851,
+   "p-value": 0.0,
+   "Lags used": 0,
+   "Observations used": 44,
+   "Critical 1%": -3.5885733964,
+   "Critical 5%": -2.9298856612,
+   "Critical 10%": -2.6031845661,
+   "Stationary": true
+  },
+  {
+   "Variable": "PaxFromIndia",
+   "Transform": "Level",
+   "ADF statistic": -1.4435283487,
+   "p-value": 0.5612394874,
+   "Lags used": 0,
+   "Observations used": 45,
+   "Critical 1%": -3.5848288532,
+   "Critical 5%": -2.9282991495,
+   "Critical 10%": -2.6023438272,
+   "Stationary": false
+  },
+  {
+   "Variable": "PaxFromIndia",
+   "Transform": "First difference",
+   "ADF statistic": -5.5737355584,
+   "p-value": 1.4478e-06,
+   "Lags used": 0,
+   "Observations used": 44,
+   "Critical 1%": -3.5885733964,
+   "Critical 5%": -2.9298856612,
+   "Critical 10%": -2.6031845661,
+   "Stationary": true
+  },
+  {
+   "Variable": "PaxFromIndia",
+   "Transform": "Seasonal difference",
+   "ADF statistic": -2.6174708748,
+   "p-value": 0.0894398855,
+   "Lags used": 1,
+   "Observations used": 40,
+   "Critical 1%": -3.6055648906,
+   "Critical 5%": -2.937069375,
+   "Critical 10%": -2.606985625,
+   "Stationary": false
+  },
+  {
+   "Variable": "PaxFromIndia",
+   "Transform": "Log first difference",
+   "ADF statistic": -7.9569135596,
+   "p-value": 0.0,
+   "Lags used": 0,
+   "Observations used": 44,
+   "Critical 1%": -3.5885733964,
+   "Critical 5%": -2.9298856612,
+   "Critical 10%": -2.6031845661,
+   "Stationary": true
+  },
+  {
+   "Variable": "FreightToIndia",
+   "Transform": "Level",
+   "ADF statistic": -2.0688524766,
+   "p-value": 0.2572221631,
+   "Lags used": 0,
+   "Observations used": 45,
+   "Critical 1%": -3.5848288532,
+   "Critical 5%": -2.9282991495,
+   "Critical 10%": -2.6023438272,
+   "Stationary": false
+  },
+  {
+   "Variable": "FreightToIndia",
+   "Transform": "First difference",
+   "ADF statistic": -6.4698409373,
+   "p-value": 1.38e-08,
+   "Lags used": 0,
+   "Observations used": 44,
+   "Critical 1%": -3.5885733964,
+   "Critical 5%": -2.9298856612,
+   "Critical 10%": -2.6031845661,
+   "Stationary": true
+  },
+  {
+   "Variable": "FreightToIndia",
+   "Transform": "Seasonal difference",
+   "ADF statistic": -2.6707324049,
+   "p-value": 0.0792412071,
+   "Lags used": 5,
+   "Observations used": 36,
+   "Critical 1%": -3.6266519076,
+   "Critical 5%": -2.9459512826,
+   "Critical 10%": -2.6116707716,
+   "Stationary": false
+  },
+  {
+   "Variable": "FreightToIndia",
+   "Transform": "Log first difference",
+   "ADF statistic": -7.6065940734,
+   "p-value": 0.0,
+   "Lags used": 0,
+   "Observations used": 44,
+   "Critical 1%": -3.5885733964,
+   "Critical 5%": -2.9298856612,
+   "Critical 10%": -2.6031845661,
+   "Stationary": true
+  },
+  {
+   "Variable": "FreightFromIndia",
+   "Transform": "Level",
+   "ADF statistic": -1.8810191859,
+   "p-value": 0.3410422864,
+   "Lags used": 0,
+   "Observations used": 45,
+   "Critical 1%": -3.5848288532,
+   "Critical 5%": -2.9282991495,
+   "Critical 10%": -2.6023438272,
+   "Stationary": false
+  },
+  {
+   "Variable": "FreightFromIndia",
+   "Transform": "First difference",
+   "ADF statistic": -7.901616906,
+   "p-value": 0.0,
+   "Lags used": 0,
+   "Observations used": 44,
+   "Critical 1%": -3.5885733964,
+   "Critical 5%": -2.9298856612,
+   "Critical 10%": -2.6031845661,
+   "Stationary": true
+  },
+  {
+   "Variable": "FreightFromIndia",
+   "Transform": "Seasonal difference",
+   "ADF statistic": -2.8308112571,
+   "p-value": 0.0540055971,
+   "Lags used": 0,
+   "Observations used": 41,
+   "Critical 1%": -3.6009833672,
+   "Critical 5%": -2.9351348158,
+   "Critical 10%": -2.6059629804,
+   "Stationary": false
+  },
+  {
+   "Variable": "FreightFromIndia",
+   "Transform": "Log first difference",
+   "ADF statistic": -8.7102332353,
+   "p-value": 0.0,
+   "Lags used": 0,
+   "Observations used": 44,
+   "Critical 1%": -3.5885733964,
+   "Critical 5%": -2.9298856612,
+   "Critical 10%": -2.6031845661,
+   "Stationary": true
+  }
+ ],
+ "adf_ct": [
+  {
+   "Variable": "PaxToIndia",
+   "ADF statistic": -2.501505402,
+   "p-value": 0.3272100588,
+   "Stationary": false
+  },
+  {
+   "Variable": "PaxFromIndia",
+   "ADF statistic": -1.565513036,
+   "p-value": 0.8056460944,
+   "Stationary": false
+  },
+  {
+   "Variable": "FreightToIndia",
+   "ADF statistic": -2.3664202281,
+   "p-value": 0.3976164005,
+   "Stationary": false
+  },
+  {
+   "Variable": "FreightFromIndia",
+   "ADF statistic": -2.0812751411,
+   "p-value": 0.5565650381,
+   "Stationary": false
+  }
+ ],
+ "acf": {
+  "Level": {
+   "bound": 0.28898092387373214,
+   "acf_sig": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    10,
+    11,
+    12
+   ],
+   "pacf_sig": [
+    1,
+    5
+   ],
+   "acf": [
+    0.876,
+    0.74,
+    0.593,
+    0.487,
+    0.302,
+    0.131
+   ],
+   "pacf": [
+    0.876,
+    -0.114,
+    -0.127,
+    0.096,
+    -0.444,
+    -0.038
+   ]
+  },
+  "First difference": {
+   "bound": 0.2921741801921938,
+   "acf_sig": [
+    4
+   ],
+   "pacf_sig": [
+    4
+   ],
+   "acf": [
+    0.025,
+    0.003,
+    -0.124,
+    0.332,
+    -0.061,
+    -0.158
+   ],
+   "pacf": [
+    0.025,
+    0.002,
+    -0.124,
+    0.344,
+    -0.105,
+    -0.19
+   ]
+  }
+ },
+ "rolling_metrics": [
+  {
+   "Model": "Seasonal Naive",
+   "N": 12,
+   "MAE": 920134.8333333334,
+   "RMSE": 994630.7181058036,
+   "MAPE (%)": 10.4682967948,
+   "MAPE N": 12,
+   "sMAPE (%)": 11.1120898615,
+   "Bias (mean error)": 790385.5,
+   "Failed origins": 0
+  },
+  {
+   "Model": "SARIMAX",
+   "N": 12,
+   "MAE": 356699.2299193526,
+   "RMSE": 449537.6398363929,
+   "MAPE (%)": 4.084593474,
+   "MAPE N": 12,
+   "sMAPE (%)": 3.963486009,
+   "Bias (mean error)": -252539.7214767057,
+   "Failed origins": 0
+  },
+  {
+   "Model": "VAR",
+   "N": 12,
+   "MAE": 880632.1939126094,
+   "RMSE": 1157537.5209440335,
+   "MAPE (%)": 9.6891486145,
+   "MAPE N": 12,
+   "sMAPE (%)": 9.2123475451,
+   "Bias (mean error)": -349432.8744166225,
+   "Failed origins": 0
+  },
+  {
+   "Model": "SARIMAX + exog (conditional)",
+   "N": 12,
+   "MAE": 201147.7750162744,
+   "RMSE": 265164.3785032018,
+   "MAPE (%)": 2.2372670122,
+   "MAPE N": 12,
+   "sMAPE (%)": 2.2532169842,
+   "Bias (mean error)": 21209.3915651084,
+   "Failed origins": 0
+  },
+  {
+   "Model": "SARIMAX + exog (operational)",
+   "N": 12,
+   "MAE": 821122.9599447994,
+   "RMSE": 924267.6575227721,
+   "MAPE (%)": 9.3226814921,
+   "MAPE N": 12,
+   "sMAPE (%)": 9.8732860443,
+   "Bias (mean error)": 697887.8208381654,
+   "Failed origins": 0
+  }
+ ],
+ "rolling_period": "2023 Q3 \u2013 2026 Q2",
+ "rolling_forecasts": [
+  {
+   "Date": "2023-07-01",
+   "Train end": "2023-04-01",
+   "Train size": 34,
+   "Actual": 7369804.0,
+   "Seasonal Naive": 6050154.0,
+   "SARIMAX": 7973514.618467003,
+   "VAR": 7254962.638286925,
+   "SARIMAX + exog (conditional)": 7320151.168140057,
+   "SARIMAX + exog (operational)": 6119333.204102806
+  },
+  {
+   "Date": "2023-10-01",
+   "Train end": "2023-07-01",
+   "Train size": 35,
+   "Actual": 8913959.0,
+   "Seasonal Naive": 7430008.0,
+   "SARIMAX": 8710263.509667974,
+   "VAR": 7651689.026006499,
+   "SARIMAX + exog (conditional)": 8306752.9314146545,
+   "SARIMAX + exog (operational)": 7097842.603688557
+  },
+  {
+   "Date": "2024-01-01",
+   "Train end": "2023-10-01",
+   "Train size": 36,
+   "Actual": 8510818.0,
+   "Seasonal Naive": 7042996.0,
+   "SARIMAX": 8654515.070972731,
+   "VAR": 8351491.744039907,
+   "SARIMAX + exog (conditional)": 8233406.223945638,
+   "SARIMAX + exog (operational)": 7245842.518168884
+  },
+  {
+   "Date": "2024-04-01",
+   "Train end": "2024-01-01",
+   "Train size": 37,
+   "Actual": 8749019.0,
+   "Seasonal Naive": 7667677.0,
+   "SARIMAX": 9472835.47697556,
+   "VAR": 8654781.198312862,
+   "SARIMAX + exog (conditional)": 8959478.41907254,
+   "SARIMAX + exog (operational)": 8038177.22771926
+  },
+  {
+   "Date": "2024-07-01",
+   "Train end": "2024-04-01",
+   "Train size": 38,
+   "Actual": 8369638.0,
+   "Seasonal Naive": 7369804.0,
+   "SARIMAX": 8492530.188859284,
+   "VAR": 9293706.71688116,
+   "SARIMAX + exog (conditional)": 8411451.482414525,
+   "SARIMAX + exog (operational)": 7753967.472735375
+  },
+  {
+   "Date": "2024-10-01",
+   "Train end": "2024-07-01",
+   "Train size": 39,
+   "Actual": 9923696.0,
+   "Seasonal Naive": 8913959.0,
+   "SARIMAX": 9781977.473179666,
+   "VAR": 9148115.047484424,
+   "SARIMAX + exog (conditional)": 10044977.755060714,
+   "SARIMAX + exog (operational)": 9145378.335781697
+  },
+  {
+   "Date": "2025-01-01",
+   "Train end": "2024-10-01",
+   "Train size": 40,
+   "Actual": 9212963.0,
+   "Seasonal Naive": 8510818.0,
+   "SARIMAX": 9520598.41409012,
+   "VAR": 10404152.274379438,
+   "SARIMAX + exog (conditional)": 9616469.582857737,
+   "SARIMAX + exog (operational)": 8795101.169517512
+  },
+  {
+   "Date": "2025-04-01",
+   "Train end": "2025-01-01",
+   "Train size": 41,
+   "Actual": 9335219.0,
+   "Seasonal Naive": 8749019.0,
+   "SARIMAX": 9489587.012168884,
+   "VAR": 9125274.114699086,
+   "SARIMAX + exog (conditional)": 9588188.907116517,
+   "SARIMAX + exog (operational)": 8898290.861212984
+  },
+  {
+   "Date": "2025-07-01",
+   "Train end": "2025-04-01",
+   "Train size": 42,
+   "Actual": 9033491.0,
+   "Seasonal Naive": 8369638.0,
+   "SARIMAX": 8920425.333363242,
+   "VAR": 9901366.148691304,
+   "SARIMAX + exog (conditional)": 9065933.820108708,
+   "SARIMAX + exog (operational)": 8321144.357778033
+  },
+  {
+   "Date": "2025-10-01",
+   "Train end": "2025-07-01",
+   "Train size": 43,
+   "Actual": 10752640.0,
+   "Seasonal Naive": 9923696.0,
+   "SARIMAX": 10586162.633133236,
+   "VAR": 10181645.314194376,
+   "SARIMAX + exog (conditional)": 10769796.334076254,
+   "SARIMAX + exog (operational)": 9834963.968658753
+  },
+  {
+   "Date": "2026-01-01",
+   "Train end": "2025-10-01",
+   "Train size": 44,
+   "Actual": 9332607.0,
+   "Seasonal Naive": 9212963.0,
+   "SARIMAX": 10159048.58885817,
+   "VAR": 12152654.253980849,
+   "SARIMAX + exog (conditional)": 9016986.103005942,
+   "SARIMAX + exog (operational)": 9139747.595938351
+  },
+  {
+   "Date": "2026-04-01",
+   "Train end": "2026-01-01",
+   "Train size": 45,
+   "Actual": 8556723.0,
+   "Seasonal Naive": 9335219.0,
+   "SARIMAX": 9329595.337984597,
+   "VAR": 10133933.01604264,
+   "SARIMAX + exog (conditional)": 8472471.574005412,
+   "SARIMAX + exog (operational)": 9296133.834639804
+  }
+ ],
+ "rolling_first_train": 34,
+ "sarimax_fit": {
+  "aic": 1130.8474545669044,
+  "bic": 1137.1815303207288,
+  "converged": true,
+  "params": {
+   "ar.L1": 0.38536612829794364,
+   "ma.L1": -0.17280269731635628,
+   "ar.S.L4": -0.2633168481382476,
+   "sigma2": 2155720066176.024
+  },
+  "n": 46
+ },
+ "screening": [
+  {
+   "Configuration": "SARIMAX(1,1,0)(0,1,0,4)",
+   "Successful forecasts": 12,
+   "MAE": 280079.1682221776,
+   "RMSE": 378458.5804408613,
+   "MAPE (%)": 3.2014861452
+  },
+  {
+   "Configuration": "SARIMAX(0,1,1)(0,1,0,4)",
+   "Successful forecasts": 12,
+   "MAE": 282022.1956644086,
+   "RMSE": 384493.6151698391,
+   "MAPE (%)": 3.241399009
+  },
+  {
+   "Configuration": "SARIMAX(0,1,0)(0,1,0,4)",
+   "Successful forecasts": 12,
+   "MAE": 306845.4166666668,
+   "RMSE": 427894.1599569338,
+   "MAPE (%)": 3.5645020483
+  },
+  {
+   "Configuration": "SARIMAX(1,1,0)(1,1,0,4)",
+   "Successful forecasts": 12,
+   "MAE": 355340.4562583356,
+   "RMSE": 450223.0541323566,
+   "MAPE (%)": 4.0789308552
+  },
+  {
+   "Configuration": "SARIMAX(1,1,1)(1,1,0,4)",
+   "Successful forecasts": 12,
+   "MAE": 356699.2299193526,
+   "RMSE": 449537.6398363929,
+   "MAPE (%)": 4.084593474
+  },
+  {
+   "Configuration": "SARIMAX(0,1,1)(0,1,1,4)",
+   "Successful forecasts": 12,
+   "MAE": 399323.6392991295,
+   "RMSE": 494387.2125124974,
+   "MAPE (%)": 4.5811105839
+  }
+ ],
+ "var": {
+  "lag_cap": 1,
+  "n_transformed": 45,
+  "adf": [
+   {
+    "Variable": "PaxToIndia",
+    "ADF p-value (transformed)": 0.0,
+    "Stationary at 5%": true
+   },
+   {
+    "Variable": "PaxFromIndia",
+    "ADF p-value (transformed)": 0.0,
+    "Stationary at 5%": true
+   },
+   {
+    "Variable": "FreightToIndia",
+    "ADF p-value (transformed)": 0.0,
+    "Stationary at 5%": true
+   },
+   {
+    "Variable": "FreightFromIndia",
+    "ADF p-value (transformed)": 0.0,
+    "Stationary at 5%": true
+   }
+  ],
+  "notes": [],
+  "spec": "VAR on log differences of 4 variables, lag 1",
+  "aic": -15.904747262803067
+ },
+ "future": {
+  "Seasonal Naive": [
+   {
+    "Date": "2026-07-01",
+    "Forecast": 9033491.0,
+    "Lower": 4138018.5284816697,
+    "Upper": 13928963.47151833
+   },
+   {
+    "Date": "2026-10-01",
+    "Forecast": 10752640.0,
+    "Lower": 5857167.52848167,
+    "Upper": 15648112.47151833
+   },
+   {
+    "Date": "2027-01-01",
+    "Forecast": 9332607.0,
+    "Lower": 4437134.52848167,
+    "Upper": 14228079.47151833
+   },
+   {
+    "Date": "2027-04-01",
+    "Forecast": 8556723.0,
+    "Lower": 3661250.5284816697,
+    "Upper": 13452195.47151833
+   },
+   {
+    "Date": "2027-07-01",
+    "Forecast": 9033491.0,
+    "Lower": 2110247.4365546415,
+    "Upper": 15956734.56344536
+   },
+   {
+    "Date": "2027-10-01",
+    "Forecast": 10752640.0,
+    "Lower": 3829396.4365546415,
+    "Upper": 17675883.56344536
+   },
+   {
+    "Date": "2028-01-01",
+    "Forecast": 9332607.0,
+    "Lower": 2409363.4365546415,
+    "Upper": 16255850.56344536
+   },
+   {
+    "Date": "2028-04-01",
+    "Forecast": 8556723.0,
+    "Lower": 1633479.4365546415,
+    "Upper": 15479966.56344536
+   }
+  ],
+  "SARIMAX": [
+   {
+    "Date": "2026-07-01",
+    "Forecast": 8009192.087512165,
+    "Lower": 5131500.327931371,
+    "Upper": 10886883.84709296
+   },
+   {
+    "Date": "2026-10-01",
+    "Forecast": 9598025.44251261,
+    "Lower": 5075093.968331634,
+    "Upper": 14120956.916693587
+   },
+   {
+    "Date": "2027-01-01",
+    "Forecast": 8331296.19146246,
+    "Lower": 2471829.7009667065,
+    "Upper": 14190762.681958213
+   },
+   {
+    "Date": "2027-04-01",
+    "Forecast": 7779010.579071022,
+    "Lower": 786527.4604667742,
+    "Upper": 14771493.69767527
+   },
+   {
+    "Date": "2027-07-01",
+    "Forecast": 7291233.6453480385,
+    "Lower": -1903684.0250506178,
+    "Upper": 16486151.315746695
+   },
+   {
+    "Date": "2027-10-01",
+    "Forecast": 8912466.008845175,
+    "Lower": -2310544.2588346004,
+    "Upper": 20135476.27652495
+   },
+   {
+    "Date": "2028-01-01",
+    "Forecast": 7604631.207452595,
+    "Lower": -5422235.255901901,
+    "Upper": 20631497.670807093
+   },
+   {
+    "Date": "2028-04-01",
+    "Forecast": 6993183.937362456,
+    "Lower": -7647820.185609647,
+    "Upper": 21634188.06033456
+   }
+  ],
+  "VAR": [
+   {
+    "Date": "2026-07-01",
+    "Forecast": 6769818.877410787,
+    "Lower": 2372119.922313019,
+    "Upper": 19320459.813962046
+   },
+   {
+    "Date": "2026-10-01",
+    "Forecast": 7374176.703925865,
+    "Lower": 1812767.69893235,
+    "Upper": 29997490.628694266
+   },
+   {
+    "Date": "2027-01-01",
+    "Forecast": 7337103.446109223,
+    "Lower": 1417357.4580941992,
+    "Upper": 37981305.75422571
+   },
+   {
+    "Date": "2027-04-01",
+    "Forecast": 7325555.262753812,
+    "Lower": 1126825.116049428,
+    "Upper": 47623858.52367362
+   },
+   {
+    "Date": "2027-07-01",
+    "Forecast": 7364232.388026208,
+    "Lower": 929761.2158508484,
+    "Upper": 58328867.39120986
+   },
+   {
+    "Date": "2027-10-01",
+    "Forecast": 7371356.408431395,
+    "Lower": 775353.2761512736,
+    "Upper": 70080177.60606098
+   },
+   {
+    "Date": "2028-01-01",
+    "Forecast": 7399803.997438802,
+    "Lower": 658477.8618961208,
+    "Upper": 83157084.49610637
+   },
+   {
+    "Date": "2028-04-01",
+    "Forecast": 7411188.89783392,
+    "Lower": 563380.5024116223,
+    "Upper": 97493116.3649794
+   }
+  ],
+  "SARIMAX + exog (operational)": [
+   {
+    "Date": "2026-07-01",
+    "Forecast": 9183218.796710802,
+    "Lower": 8576634.34602101,
+    "Upper": 9789803.247400595
+   },
+   {
+    "Date": "2026-10-01",
+    "Forecast": 10834989.340388171,
+    "Lower": 10218375.83787382,
+    "Upper": 11451602.842902523
+   },
+   {
+    "Date": "2027-01-01",
+    "Forecast": 9434075.492041362,
+    "Lower": 8682404.134577814,
+    "Upper": 10185746.84950491
+   },
+   {
+    "Date": "2027-04-01",
+    "Forecast": 8643322.633723943,
+    "Lower": 7858845.206879884,
+    "Upper": 9427800.060568001
+   },
+   {
+    "Date": "2027-07-01",
+    "Forecast": 9280416.82593652,
+    "Lower": 8072985.662926631,
+    "Upper": 10487847.98894641
+   },
+   {
+    "Date": "2027-10-01",
+    "Forecast": 10925304.312505264,
+    "Lower": 9661256.024092142,
+    "Upper": 12189352.600918386
+   },
+   {
+    "Date": "2028-01-01",
+    "Forecast": 9530635.167580884,
+    "Lower": 8073894.254409702,
+    "Upper": 10987376.080752065
+   },
+   {
+    "Date": "2028-04-01",
+    "Forecast": 8736054.957176443,
+    "Lower": 7196282.65010049,
+    "Upper": 10275827.264252396
+   }
+  ]
+ },
+ "future_log": [
+  {
+   "Date": "2026-07-01",
+   "Forecast": 8454121.582773846,
+   "Lower": 2193959.2337584672,
+   "Upper": 32576800.259813275
+  },
+  {
+   "Date": "2026-10-01",
+   "Forecast": 10110619.03861066,
+   "Lower": 1762398.037444944,
+   "Upper": 58003138.435241014
+  },
+  {
+   "Date": "2027-01-01",
+   "Forecast": 8982972.05192487,
+   "Lower": 1169185.450876338,
+   "Upper": 69017098.03622782
+  },
+  {
+   "Date": "2027-04-01",
+   "Forecast": 8511706.531129068,
+   "Lower": 863896.4137200674,
+   "Upper": 83863235.130342
+  },
+  {
+   "Date": "2027-07-01",
+   "Forecast": 8353635.554544468,
+   "Lower": 415101.9894827055,
+   "Upper": 168111039.5667156
+  },
+  {
+   "Date": "2027-10-01",
+   "Forecast": 9975315.811735027,
+   "Lower": 304007.207475876,
+   "Upper": 327317652.6637021
+  },
+  {
+   "Date": "2028-01-01",
+   "Forecast": 8795592.479045669,
+   "Lower": 177796.6358618278,
+   "Upper": 435117608.84815556
+  },
+  {
+   "Date": "2028-04-01",
+   "Forecast": 8245347.7001899015,
+   "Lower": 115432.6896592169,
+   "Upper": 588964520.3428613
+  }
+ ],
+ "future_checks": [
+  {
+   "Check": "Forecast horizon matches selection",
+   "Passed": true,
+   "Details": "8 of 8 quarters"
+  },
+  {
+   "Check": "Forecast dates are consecutive quarters",
+   "Passed": true,
+   "Details": "2026 Q3 to 2028 Q2"
+  },
+  {
+   "Check": "No overlap with observed quarters",
+   "Passed": true,
+   "Details": "Last observed: 2026 Q2"
+  },
+  {
+   "Check": "All values finite",
+   "Passed": true,
+   "Details": ""
+  },
+  {
+   "Check": "Bounds ordered (lower \u2264 forecast \u2264 upper)",
+   "Passed": true,
+   "Details": ""
+  },
+  {
+   "Check": "Point forecasts non-negative",
+   "Passed": true,
+   "Details": ""
+  },
+  {
+   "Check": "Lower bounds non-negative",
+   "Passed": false,
+   "Details": "Negative lower bounds are kept as estimated and flagged."
+  }
+ ],
+ "future_notes": {
+  "Seasonal Naive": [
+   "Intervals become very wide (up to 162% of the point forecast) \u2013 long-horizon uncertainty is large for this short series.",
+   "Intervals use a normal approximation: residual RMSE \u00d7 \u221a(seasons ahead)."
+  ],
+  "SARIMAX": [
+   "Some lower interval bounds are below zero, which is impossible for traffic counts. They are shown unchanged; a log-scale model keeps bounds positive.",
+   "Intervals become very wide (up to 419% of the point forecast) \u2013 long-horizon uncertainty is large for this short series.",
+   "The first 5 in-sample residuals are excluded: they are start-up effects of differencing (d=1, D=1, s=4), not genuine errors."
+  ],
+  "VAR": [
+   "Intervals become very wide (up to 1308% of the point forecast) \u2013 long-horizon uncertainty is large for this short series.",
+   "Lag order 1 chosen by BIC (maximum allowed by sample size: 1).",
+   "Intervals reflect shock uncertainty only, not parameter-estimation uncertainty."
+  ],
+  "SARIMAX + exog (operational)": [
+   "The first 5 in-sample residuals are excluded: they are start-up effects of differencing (d=1, D=1, s=4), not genuine errors.",
+   "Future exogenous values are Seasonal Naive projections; their uncertainty is not included in the interval."
+  ]
+ },
+ "resid_summary": {
+  "N": 41.0,
+  "Mean": -26808.00387652224,
+  "Std. dev.": 1385277.4022220452,
+  "Min": -5335404.729170238,
+  "Max": 4000205.2503322274,
+  "Skewness": -0.39515861472892383,
+  "Excess kurtosis": 6.340960710426527,
+  "Shapiro-Wilk p-value": 9.286078123748016e-06,
+  "Jarque-Bera p-value": 5.801453132235782e-12,
+  "Mean = 0 t-test p-value": 0.9020041250046081
+ },
+ "resid_lb": [
+  {
+   "Lag": 4,
+   "Q statistic": 2.0701121058,
+   "p-value": 0.1502104795
+  },
+  {
+   "Lag": 8,
+   "Q statistic": 10.9083450796,
+   "p-value": 0.0532278209
+  }
+ ],
+ "roll_err_summary": {
+  "N": 12.0,
+  "Mean": -252539.72147670574,
+  "Std. dev.": 388434.309934091,
+  "Min": -826441.5888581704,
+  "Max": 203695.49033202603,
+  "Skewness": -0.36286435389167204,
+  "Excess kurtosis": -1.5205285575630367,
+  "Shapiro-Wilk p-value": 0.09586201178739706,
+  "Jarque-Bera p-value": 0.5472791712739254,
+  "Mean = 0 t-test p-value": 0.04571497998820376
+ },
+ "roll_err_lb": [
+  {
+   "Lag": 4,
+   "Q statistic": 4.7172431629,
+   "p-value": 0.3175592273
+  }
+ ],
+ "figures": [
+  [
+   1,
+   "Figure_01_System_Architecture.png",
+   "System architecture of the analytics and forecasting platform"
+  ],
+  [
+   2,
+   "Figure_02_Methodology_Workflow.png",
+   "Methodology workflow followed in the project"
+  ],
+  [
+   3,
+   "Figure_03_Rolling_Origin_Scheme.png",
+   "Expanding-window rolling-origin evaluation scheme"
+  ],
+  [
+   5,
+   "Figure_05_Passenger_Traffic_Trends.png",
+   "Quarterly passenger traffic to and from India, 2015 Q1 \u2013 2026 Q2"
+  ],
+  [
+   6,
+   "Figure_06_Freight_Traffic_Trends.png",
+   "Quarterly freight traffic to and from India, 2015 Q1 \u2013 2026 Q2"
+  ],
+  [
+   7,
+   "Figure_07_PaxToIndia_Moving_Average.png",
+   "Passengers to India with a four-quarter moving average"
+  ],
+  [
+   8,
+   "Figure_08_PaxToIndia_QoQ_Growth.png",
+   "Quarter-over-quarter change in passengers to India"
+  ],
+  [
+   9,
+   "Figure_09_PaxToIndia_YoY_Growth.png",
+   "Year-over-year change in passengers to India"
+  ],
+  [
+   10,
+   "Figure_10_Annual_Passenger_Traffic.png",
+   "Annual passenger traffic totals"
+  ],
+  [
+   11,
+   "Figure_11_Annual_Freight_Traffic.png",
+   "Annual freight traffic totals"
+  ],
+  [
+   12,
+   "Figure_12_Quarterly_Seasonal_Comparison.png",
+   "Passengers to India by quarter and year"
+  ],
+  [
+   13,
+   "Figure_13_Quarter_of_Year_Boxplot.png",
+   "Distribution of passengers to India by quarter of year"
+  ],
+  [
+   14,
+   "Figure_14_Variable_Distributions.png",
+   "Histograms of the four quarterly traffic variables"
+  ],
+  [
+   15,
+   "Figure_15_Correlation_Heatmap_Levels.png",
+   "Pearson correlation matrix of the traffic variables (levels)"
+  ],
+  [
+   16,
+   "Figure_16_Correlation_Heatmap_Log_Changes.png",
+   "Pearson correlation matrix of the traffic variables (quarter-over-quarter log changes)"
+  ],
+  [
+   17,
+   "Figure_17_Scatter_Matrix.png",
+   "Scatter-plot matrix of the four quarterly traffic variables"
+  ],
+  [
+   18,
+   "Figure_18_Top_Countries.png",
+   "Top 15 countries by total passengers to India"
+  ],
+  [
+   19,
+   "Figure_19_Top_Country_Shares.png",
+   "Quarterly share of passengers to India for the five largest origin countries"
+  ],
+  [
+   20,
+   "Figure_20_Seasonal_Decomposition_PaxToIndia.png",
+   "Additive seasonal decomposition of passengers to india"
+  ],
+  [
+   21,
+   "Figure_21_Seasonal_Decomposition_FreightToIndia.png",
+   "Additive seasonal decomposition of freight to india"
+  ],
+  [
+   22,
+   "Figure_22_ACF_PACF_Level.png",
+   "ACF and PACF of passengers to India (level)"
+  ],
+  [
+   23,
+   "Figure_23_ACF_PACF_First_difference.png",
+   "ACF and PACF of passengers to India (first difference)"
+  ],
+  [
+   24,
+   "Figure_24_Seasonal_Subseries.png",
+   "Seasonal sub-series plot of passengers to India"
+  ],
+  [
+   25,
+   "Figure_25_SARIMAX_Fitted_vs_Actual.png",
+   "SARIMAX(1,1,1)(1,1,0,4) actual versus in-sample fitted values"
+  ],
+  [
+   26,
+   "Figure_26_Rolling_Actual_vs_Predicted.png",
+   "Rolling-origin one-step forecasts of Seasonal Naive, SARIMAX and VAR against actual values"
+  ],
+  [
+   27,
+   "Figure_27_Exogenous_Conditional_vs_Operational.png",
+   "Conditional versus operational SARIMAX with exogenous regressors"
+  ],
+  [
+   28,
+   "Figure_28_Model_Error_Metrics.png",
+   "MAE, RMSE and MAPE of the five model variants"
+  ],
+  [
+   29,
+   "Figure_29_Per_Quarter_Errors.png",
+   "Per-quarter rolling forecast errors (actual \u2212 predicted)"
+  ],
+  [
+   30,
+   "Figure_30_Error_Distribution.png",
+   "Distribution of rolling forecast errors by model"
+  ],
+  [
+   31,
+   "Figure_31_SARIMAX_Order_Screening.png",
+   "Rolling-origin MAE of alternative SARIMAX orders"
+  ],
+  [
+   32,
+   "Figure_32_Future_Forecast_SARIMAX.png",
+   "Eight-quarter forecast of passengers to India from SARIMAX(1,1,1)(1,1,0,4) with 95% prediction interval"
+  ],
+  [
+   33,
+   "Figure_33_Future_Forecast_Log_SARIMAX.png",
+   "Eight-quarter forecast from SARIMAX fitted to log values, with 95% prediction interval"
+  ],
+  [
+   34,
+   "Figure_34_Future_Forecast_Model_Comparison.png",
+   "Comparison of eight-quarter point forecasts from the four future-capable models"
+  ],
+  [
+   35,
+   "Figure_35_Interval_Width_by_Horizon.png",
+   "Width of the 95% prediction interval relative to the point forecast, by horizon"
+  ],
+  [
+   36,
+   "Figure_36_SARIMAX_Residual_Diagnostics.png",
+   "In-sample residual diagnostics of SARIMAX(1,1,1)(1,1,0,4)"
+  ],
+  [
+   37,
+   "Figure_37_SARIMAX_Rolling_Error_Diagnostics.png",
+   "Diagnostics of SARIMAX rolling-origin forecast errors"
+  ],
+  [
+   4,
+   "Figure_04_Project_Schedule_Gantt.png",
+   "Project schedule as a Gantt chart"
+  ]
+ ]
+}

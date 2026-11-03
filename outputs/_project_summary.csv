@@ -1,0 +1,2 @@
+Dataset start,Dataset end,Quarterly observations,Variables,Rolling-origin test observations,Primary target,Models compared
+2015-01-01,2026-04-01,46,"PaxToIndia, PaxFromIndia, FreightToIndia, FreightFromIndia",12,PaxToIndia,"Passenger-only SARIMAX, Seasonal Naive, Multivariate VAR on log differences"

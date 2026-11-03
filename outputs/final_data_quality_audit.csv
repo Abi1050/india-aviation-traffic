@@ -1,0 +1,11 @@
+File,Exists,Size_KB
+passenger_seasonal_decomposition.png,True,369.24
+adf_stationarity_results.csv,True,0.88
+rolling_origin_forecasts.csv,True,0.63
+rolling_origin_model_metrics.csv,True,0.21
+rolling_origin_forecast_comparison.png,True,335.79
+var_rolling_origin_forecasts.csv,True,0.49
+review2_model_comparison.csv,True,0.32
+review2_three_model_forecast_comparison.png,True,382.23
+review2_project_summary.csv,True,0.3
+review2_residual_diagnostics.png,True,232.55

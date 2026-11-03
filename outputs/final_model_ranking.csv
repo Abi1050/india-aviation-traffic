@@ -1,0 +1,4 @@
+MAE_Rank,model,n,mae,rmse,mape_(%)
+1,Passenger-only SARIMAX (rolling 1-step),12,356699.22991935257,449537.6398363929,4.084593473974168
+2,"Multivariate VAR (log differences, rolling 1-step)",12,880632.1939126061,1157537.52094403,9.689148614525664
+3,Seasonal Naive (rolling 1-step),12,920134.8333333334,994630.7181058036,10.468296794824138
